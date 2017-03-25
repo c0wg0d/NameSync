@@ -1,0 +1,5 @@
+name: NameSync
+main: me.c0wg0d.NameSync
+version: 1.0
+author: c0wg0d
+depend: [Vault]

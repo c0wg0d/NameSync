@@ -1,0 +1,13 @@
+mysql:
+    host: "localhost"
+    port: "3306"
+    user: "mysql"
+    password: "password"
+    database: "xenforo"
+xenforo:
+    user_table: "xf_user"
+    username_column: "username"
+    uuid_column: "minecraft_uuid"
+    group_column: "secondary_group_id"
+groups:
+    vip: 5
