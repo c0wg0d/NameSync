@@ -1,13 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="NameSync">
-    <output-path>$PROJECT_DIR$/../../Exports</output-path>
+  <artifact type="jar" build-on-make="true" name="NameSync">
+    <output-path>$PROJECT_DIR$/out</output-path>
     <root id="archive" name="NameSync.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-        <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
       </element>
       <element id="module-output" name="NameSync" />
-      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
     </root>
   </artifact>
 </component>

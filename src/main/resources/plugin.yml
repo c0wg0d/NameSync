@@ -1,0 +1,9 @@
+name: NameSync
+version: ${project.version}
+main: me.c0wg0d.namesync.NameSync
+prefix: NameSync
+author: c0wg0d
+description: Synchronize Minecraft roles with XenForo
+website: https://www.sandlotminecraft.com
+api-version: 1.15
+depend: [Vault]
