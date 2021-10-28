@@ -34,14 +34,6 @@ public class JoinListener implements Listener {
         }
 
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-		}
-		catch (ClassNotFoundException ex) {
-			ex.printStackTrace();
-			System.err.println("[NameSync] JDBC driver is unavailable!");
-			return;
-		}
-		try {
 			String host = settings.getConfig().getString("mysql.host");
 			String port = settings.getConfig().getString("mysql.port");
 			String user = settings.getConfig().getString("mysql.user");
@@ -68,7 +60,7 @@ public class JoinListener implements Listener {
 				Bukkit.getServer().getLogger().log(Level.WARNING, "[NameSync] Player [" + player.getName() + "] does not have a UUID in Xenforo!");
 				needsUpdate = true;
 				xfHasUuid = false;
-				statement = connection.prepareStatement("SELECT * FROM " + xfUserTable + " WHERE " + xfUsernameColumn + " = ?");
+				statement = connection.prepareStatement("SELECT * FROM " + xfUserTable + " WHERE " + xfUsernameColumn + " = ?", ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 				statement.setString(1, player.getName());
 				results = statement.executeQuery();
 			}
