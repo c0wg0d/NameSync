@@ -10,8 +10,5 @@
         <module name="NameSync" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NameSync" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

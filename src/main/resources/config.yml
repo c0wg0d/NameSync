@@ -8,6 +8,8 @@ xenforo:
     user_table: "xf_user"
     username_column: "username"
     uuid_column: "minecraft_uuid"
+    xuid_column: "minecraft_xuid"
+    texture_id_column: "minecraft_texture_id"
     group_column: "secondary_group_id"
 groups:
     vip: 5

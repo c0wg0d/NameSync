@@ -6,4 +6,7 @@ author: c0wg0d
 description: Synchronize Minecraft roles with XenForo
 website: https://www.sandlotminecraft.com
 api-version: 1.19
-depend: [Vault, Floodgate]
+has-open-classloader: true
+load-after:
+  - name: [Vault, Floodgate]
+    bootstrap: false
